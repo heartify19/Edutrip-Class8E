@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Agama - Taiwan Edutrip</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(44, 62, 80, 0.95);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+      border-radius: 6px;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('holyfam.png') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ddd;
+    }
+
+    .content {
+      padding: 80px 20px 40px;
+      background-color: #f9f9f9;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      background-color: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      display: flex;
+      gap: 40px;
+      animation: fadeIn 1.2s ease;
+      flex-wrap: wrap;
+    }
+
+    .image-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-width: 250px;
+    }
+
+    .image-column img {
+      width: 100%;  /* Adjusted width for side-by-side images */
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .text-content {
+      flex: 2;
+      min-width: 280px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+
+      .image-column {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .image-column img {
+        max-width: 48%;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Agama</h1>
+    <p>Refleksi menjadi murid Yesus dan kelahiran Gereja <em>Holy Family Church</em></p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="section">
+    <div class="image-column">
+      <img src="renai.png" alt="Aurelia at Ren Ai 1">
+    </div>
+    <div class="text-content">
+      <h2>Community Service di Ren Ai</h2>
+      <p><strong>Kegiatan:</strong> Kami menampilkan berbagai pertunjukan, bernyanyi, bermain permainan, membagikan hadiah, dan juga mengajak ngobrol. Saya berpartisipasi dengan berbicara di depan panggung bersama Akong dan Amma.</p>
+      <p><strong>Tujuan:</strong> Menciptakan kesukacitaan, memberikan perhatian, dan membangun kedekatan dengan para lansia agar mereka merasa dihargai dan dicintai.</p>
+      <p><strong>Cara Mencapai Tujuan:</strong> Kami menyiapkan hiburan yang menyenangkan dan interaktif serta membagikan hadiah sebagai bentuk kasih sayang.</p>
+
+      <h2>Evaluasi</h2>
+      <p><strong>Tujuan tercapai?</strong> Ya, karena saya berhasil berbicara dan membangun percakapan dengan para lansia. Mereka terlihat senang dan menjawab dengan hangat.</p>
+      <p><strong>Tanggapan mereka?</strong> Cukup positif! Ada yang aktif dan berantusias dalam kegiatannya, dan juga ada yang hanya tersenyum diam.</p>
+    </div>
+    <div class="image-column">
+      <img src="okeokeodkpcs.png" alt="Aurelia at Ren Ai 2">
+    </div>
+  </div>
+</section>
+<!-- New Section: Holy Family Church -->
+<section class="content">
+    <div class="section">
+      <div class="image-column">
+        <img src="agamaaaaaa.png" alt="Holy Family Church" />
+      </div>
+      <div class="text-content">
+        <h2>Holy Family Church di Taiwan</h2>
+        <p>Holy Family Church di Taiwan memiliki arsitektur yang sederhana dan anggun. Bangunannya lumayan besar, bersih dan terawat. Saat saya mengikuti misa di Holy Family Church, suasananya sangat tertib. Umat yang hadir cukup aktif dan tetap bisa menyanyi bersama, meskipun lagu-lagunya tidak menggunakan bahasa ibu mereka.</p>
+        <p>Holy Family Church di Taipei, Taiwan, didirikan pada tahun 1952 dan dipindahkan lokasinya saat 1964. Gereja tersebut merupakan gereja terbesar di antara 7 paroki di Taiwan karena desain asitekturnya.</p>
+        
+        <table border="1" style="width:100%; margin-top: 20px; border-collapse: collapse; table-layout: fixed;">
+            <tr>
+              <th style="width:50%; padding: 10px;">Holy Family Church</th>
+              <th style="width:50%; padding: 10px;">Santo Laurensius</th>
+            </tr>
+            <tr>
+              <td style="padding: 10px;">Bahasa yang digunakan dalam misanya adalah Bahasa Inggris atau Mandarin</td>
+              <td style="padding: 10px;">Bahasa yang digunakan dalam misanya adalah Bahasa Inggris atau Bahasa Indonesia</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px;">Umat yang hadir di misa sering berasal dari berbagai negara, seperti Filipina, Vietnam, dan negara lainnya, yang sebagian besar adalah orang luar negeri.</td>
+              <td style="padding: 10px;">Umat yang hadir di misa mayoritas warga lokal, yaitu umat Indonesia</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px;">Banyak kegiatan untuk komunitas luar negeri</td>
+              <td style="padding: 10px;">Banyak kegiatan untuk komunitas lokal</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px;">Sederhana dan Anggun</td>
+              <td style="padding: 10px;">Banyak dekorasi dengan gaya Katolik yang tradisional</td>
+            </tr>
+          </table>
+          
+          <section class="content">
+            <div class="reflection-card side-by-side">
+              </div>
+              <div class="text-content">
+                <h2>Refleksi Menjadi Murid Yesus</h2>
+          
+                <div class="reflection">
+                  <h3>Ceritakanlah pengalamanmu selama mengikuti edutrip, adakah hal-hal yang membuat kamu harus menyangkal diri sebagai murid Yesus?</h3>
+                  <p>Ya, ada. Saya harus mengalahkan rasa malas. Saya awalnya menganggap aktivitas ini akan melelahkan dan agak merepotkan. Tetapi dalam peran saya sebagai murid Yesus saya merasakan panggilan untuk melayani orang lain dengan penuh hati. Maka saya mulai melepaskan ego saya dan fokus untuk mengasih sayang untuk orang lain dan memberikan perhatian kepada lansia yang kami kunjungi.</p>
+                </div>
+          
+                <div class="reflection">
+                  <h3>Ceritakanlah pengalaman selama mengikuti edutrip, adakah hal-hal yang membuat kamu harus memanggul salib?</h3>
+                  <p>Ya, ada. Saya rasakan harus keluar dari zona nyaman saya, seperti berbicara di depan orang banyak dan mencoba untuk lebih akrab lagi dengan para lansia yang belum saya kenal.</p>
+                </div>
+          
+                <div class="reflection">
+                  <h3>Selama mengikuti edutrip apakah kamu menyelesaikan semua masalah dan kesulitanmu dengan mengikuti Yesus, atau mengikuti kehendakmu? Ceritakanlah.</h3>
+                  <p>Ya, saya dapat menyelesaikan kesulitan dengan berdoa kepada Tuhan. Malam sebelum saya berbicara di depan banyak orang, saya berdoa kepada Tuhan terlebih dahulu karena saya merasa grogi. Setelah itu, saya bisa tidur dengan tenang tanpa terlalu mengkhawatirkan presentasi tersebut. Dan presentasi nya pun juga berjalan dengan lancar.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+  
+</style>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate My Website!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        textarea, input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .comment-box {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .comment {
+            background: #f9f9f9;
+            border-left: 4px solid #333;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Rate This Website</h2>
+
+    <form action="" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <label for="rating">Select Rating:</label>
+        <select name="rating" required>
+            <option value="5">⭐⭐⭐⭐⭐ (5 Stars)</option>
+            <option value="4">⭐⭐⭐⭐ (4 Stars)</option>
+            <option value="3">⭐⭐⭐ (3 Stars)</option>
+            <option value="2">⭐⭐ (2 Stars)</option>
+            <option value="1">⭐ (1 Star)</option>
+        </select>
+
+        <textarea name="comment" placeholder="Write your comment (optional)..."></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="comment-box">
+        <h3>Past Reviews</h3>
+        <?php while ($row = $result->fetch_assoc()): ?>
+            <div class="comment">
+                <strong><?= htmlspecialchars($row["name"]) ?> (<?= $row["rating"] ?> ⭐)</strong><br>
+                <?= nl2br(htmlspecialchars($row["comment"])) ?>
+            </div>
+        <?php endwhile; ?>
+    </div>
+</div>
+
+</body>
+</html>
+
+<?php
+// Close connection
+$conn->close();
+?>

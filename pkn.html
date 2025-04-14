@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Chiang Kai-shek Memorial Hall - Sejarah & Informasi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(44, 62, 80, 0.95);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+      border-radius: 6px;
+    }
+
+    .intro-banner {
+  background: url('https://i.pinimg.com/736x/b4/ee/ae/b4eeae1d77a640d42a171288503c0a87.jpg') center/cover no-repeat;
+  padding: 120px 40px 80px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.intro-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.intro-banner h1, .intro-banner p {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.intro-banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.intro-banner p {
+  font-size: 18px;
+}
+
+
+    .article {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #2c3e50;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .timeline {
+      margin: 40px 0;
+      background-color: #e9e9e9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .timeline h2 {
+      color: #2c3e50;
+      font-size: 28px;
+    }
+
+    .timeline ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .timeline li {
+      margin: 20px 0;
+    }
+
+    .timeline li p {
+      margin: 5px 0;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section class="intro-banner">
+  <h1>Chiang Kai-shek Memorial Hall</h1>
+  <p>Tempat bersejarah yang menghormati Chiang Kai-shek, pemimpin Tiongkok yang berperan besar dalam sejarah Taiwan.</p>
+</section>
+
+<div class="article">
+  <h2>Sejarah Chiang Kai-shek Memorial Hall</h2>
+  <p>Chiang Kai-shek Memorial Hall adalah salah satu landmark terkenal di Taipei, Taiwan. Didedikasikan untuk Chiang Kai-shek, presiden pertama Republik Tiongkok setelah perang saudara Tiongkok, memorial ini juga menjadi simbol perjuangan dan sejarah politik Taiwan.</p>
+  
+  <img src="chiang_kaishk_memorial_1.jpg" alt="Chiang Kai-shek Memorial Hall">
+
+  <p>Pembangunan memorial ini dimulai pada tahun 1976 dan selesai pada tahun 1980, dengan desain arsitektur yang menggabungkan elemen-elemen tradisional Tiongkok. Hall ini terletak di Taman Liberty Square, dikelilingi oleh taman luas dan bangunan megah lainnya.</p>
+
+  <h2>Timeline Sejarah</h2>
+  <div class="timeline">
+    <h2>Timeline Pembangunan dan Sejarah</h2>
+    <ul>
+      <li>
+        <h3>1975</h3>
+        <p>Setelah meninggalnya Chiang Kai-shek, rencana pembangunan memorial dimulai sebagai penghormatan untuk kontribusinya terhadap Taiwan.</p>
+      </li>
+      <li>
+        <h3>1976</h3>
+        <p>Pembangunan memorial dimulai di Taman Liberty Square, Taipei.</p>
+      </li>
+      <li>
+        <h3>1980</h3>
+        <p>Chiang Kai-shek Memorial Hall resmi dibuka untuk umum sebagai pusat sejarah dan budaya.</p>
+      </li>
+      <li>
+        <h3>2005</h3>
+        <p>Memorial Hall direnovasi untuk meningkatkan fasilitas dan mengintegrasikan teknologi modern untuk pengunjung.</p>
+      </li>
+    </ul>
+  </div>
+
+  <h2>Galeri Foto</h2>
+  <img src="https://i.pinimg.com/736x/b4/ee/ae/b4eeae1d77a640d42a171288503c0a87.jpg" alt="Chiang Kai-shek Memorial Hall at Night">
+  <img src="https://i.pinimg.com/736x/e0/b8/4e/e0b84e58a214fe08e431a2d6edb3ac65.jpg" alt="Chiang Kai-shek Memorial Hall in the Daylight">
+</div>
+<style>
+  /* Animation for fading in content */
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+  }
+
+  /* Slide-in animation for timeline items */
+  .slide-in {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+  }
+
+  .slide-in.visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* Zoom-in animation for images */
+  .zoom-in {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .zoom-in.visible {
+    transform: scale(1);
+    opacity: 1;
+  }
+</style>
+
+
+</body>
+</html>

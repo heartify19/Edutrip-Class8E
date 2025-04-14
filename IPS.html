@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Investigasi Lukang & Keelung - Taiwan Edutrip</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(44, 62, 80, 0.95);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+      border-radius: 6px;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url(https://i.pinimg.com/736x/0b/f5/60/0bf5604ec1200bdeb439444474aefa18.jpg) center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ddd;
+    }
+
+    .content {
+      padding: 80px 20px 40px;
+      background-color: #f9f9f9;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      background-color: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      animation: fadeIn 1.2s ease;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Investigasi Lukang Old Street</h1>
+    <p>Eksplorasi sejarah perdagangan dan budaya lokal di Taiwan</p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="section">
+    <h2>Tujuan Investigasi</h2>
+    <p>Investigasi di Lukang Old Street, Keelung, untuk mengetahui mengenai riwayat penduduk dalam berdagang dan memenuhi kebutuhan mereka!</p>
+
+    <p>Tempat Lukang Old Street adalah tempat perdagangannya dari bapaknya yang sudah tidak ada. Dengan menjual disini, mereka bergantung pada pasar lokal dan hubungan dagang dengan desa-desa sekitar.</p>
+
+    <p>Lakukan wawancara serta lakukan observasi untuk mencari informasi berikut:</p>
+    <ul>
+      <li>1. Kondisi sebagian besar bangunan</li>
+      <li>2. Cara masyarakat merawat masa lalu</li>
+      <li>3. Tata kota area destinasi</li>
+      <li>4. Interaksi antar-generasi</li>
+      <li>5. Kepercataan/keyakinan rakyat</li>
+    </ul>
+
+    <h2>Hasil Wawancara</h2>
+    <ul>
+      <li>1. Bangunan di Jiufen Old Street masih bergaya tradisional Taiwan dengan pengaruh Jepang.</li>
+      <li>2. Penduduk menjaga warisan budaya dengan melestarikan toko teh, rumah tua, dan lain-lain.</li>
+      <li>3. Jalan sempit berbatu dengan toko-toko bejejer menciptakan suasana khas.</li>
+      <li>4. Penduduk tua kadang berbagi cerita sejarah sementara generasi muda membantu bisnis keluarga.</li>
+      <li>5. Masyarakat masih percaya pada dewa-dewa Tiongkok, sering berdoa di temple dan menjaga mitos lokal.</li>
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>

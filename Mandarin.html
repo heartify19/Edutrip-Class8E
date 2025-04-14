@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Taiwan Bestfriend</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(44, 62, 80, 0.95);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+      border-radius: 6px;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url(https://lh3.googleusercontent.com/p/AF1QipMFGs5HkSoDxdrcL_UpjVUUrtAU8fXPYyqpOMKD=s1360-w1360-h1020)center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ddd;
+    }
+
+    .content {
+      padding: 80px 20px 40px;
+      background-color: #f9f9f9;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      background-color: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      display: flex;
+      gap: 40px;
+      animation: fadeIn 1.2s ease;
+      flex-wrap: wrap;
+    }
+
+    .image-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-width: 250px;
+    }
+
+    .image-column img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .text-content {
+      flex: 2;
+      min-width: 280px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .vocab-section {
+      background-color: #fff;
+      padding: 40px;
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .vocab-section h2 {
+      color: #1abc9c;
+      margin-bottom: 20px;
+    }
+
+    .vocab-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .vocab-item {
+      background-color: #ecf0f1;
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .vocab-item strong {
+      color: #2c3e50;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>我的台湾好朋友</h1>
+    <p>My Taiwan Bestfriend – Maxine from FuJen Sacred Heart</p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="section">
+    <div class="image-column">
+      <img src="maxine1.jpg" alt="Photo with Maxine">
+      <img src="snack.png" alt="snack">
+    </div>
+    <div class="text-content">
+      <h2>认识许以昕 (Getting to Know Maxine)</h2>
+      <p>大家好！今天我要跟你们介绍一下我的台湾学校的朋友。她的名字叫 Maxine，中文名字叫许以昕。她今年十四岁，上八年级。她四月二十日生日。她长得很可爱。她有大大的眼睛和长长的头发，但是她有一点矮。她在 FuJen Sacred Heart 学校读书。</p>
+      <p>Hello everyone! Today I want to introduce my friend from the school in Taiwan. Her name is Maxine, and her Chinese name is Xu Yixin. She is 14 years old and in 8th grade. Her birthday is on April 20. She’s really cute. She has big eyes and long hair, but she’s a little short. She studies at FuJen Sacred Heart School.</p>
+
+      <p>她喜欢吃水果，她最喜欢的水果是芒果。她的爱好是玩电脑游戏，比如说 Roblox。在台湾的时候，我们去九份老街，英文名字叫 Jiufen Old Street。</p>
+      <p>She loves eating fruit, and her favorite fruit is mango. Her hobby is playing computer games like Roblox. When we were in Taiwan, we went to Jiufen Old Street.</p>
+    </div>
+    <div class="image-column">
+      <img src="backgroundmanda.JPG" alt="FuJen">
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="section">
+    <div class="text-content">
+      <h2>美好回忆 (Great Memories)</h2>
+      <p>在哪个地方，我们买了台湾第一名的奶茶，就是幸福堂。真的很好喝！跟印尼的奶茶不一样，台湾的幸福堂的奶茶比较多，也更便宜。我还给我家人买了纪念品和零食。</p>
+      <p>There, we bought Taiwan’s number one milk tea – Xing Fu Tang. It was really delicious! Unlike Indonesian milk tea, Taiwan’s version was bigger and cheaper. I also bought souvenirs and snacks for my family.</p>
+
+      <p>我最喜欢跟许以昕在 FuJen Sacred Heart 学校玩游戏。在学校里面，我看见了远处的山。除了山，我交了很多新朋友！我还学到了很多我不认识的单词。</p>
+      <p>My favorite part was playing with Maxine at FuJen Sacred Heart School. At school, I could see mountains in the distance. Besides the mountains, I made many new friends and learned many new words!</p>
+    </div>
+    <div class="image-column">
+      <img src="milk-tea.jpg" alt="bubble tea" />
+    </div>
+  </div>
+</section>
+
+<section class="vocab-section">
+  <h2>🈶 New Words I Learned</h2>
+  <div class="vocab-list">
+    <div class="vocab-item">
+      <strong>称呼</strong> – form of address
+    </div>
+    <div class="vocab-item">
+      <strong>唐人街</strong> – Chinatown
+    </div>
+    <div class="vocab-item">
+      <strong>搬到了</strong> – moved to
+    </div>
+    <div class="vocab-item">
+      <strong>一言九鼎</strong> – words carry great weight (idiom)
+    </div>
+    <div class="vocab-item">
+      <strong>表示</strong> – to express, to show
+    </div>
+    <div class="vocab-item">
+      <strong>温暖</strong> – warm (feeling or temperature)
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
